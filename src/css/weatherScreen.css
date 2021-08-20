@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.root {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+}
+
+.temperature {
+    width: 100%;
+    height: auto;
+}
+
+.main_temp {
+    margin: -4vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.main_temp span {
+    font-size: 10vh;
+}
+
+.main_temp p {
+    font-size: 5vh;
+    top: 2vh;
+}
+
+.graph_section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 2vh;
+    justify-content: center;
+}
+
+.sdiv, .ediv {
+    width: 12%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    margin-top: 12.5vh;
+}
+
+.gdiv {
+    height: auto;
+    max-width: 70%;
+    width: auto;
+}
+
+.temp_details {
+    width: 100%;
+    height: auto;
+    margin-top: 4vh;
+    display: flex;
+    justify-content: center;
+}
+
+.temp_details div {
+    width: 25vw;
+    height: auto;
+}
+
+.location_section {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.extra_details {
+    margin-top: 4vh;
+    font-weight: bold;
+    padding-bottom: 4vh;
+}
+
+.load_images {
+    width: 30%;
+    height: 30%;
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 12%;
+    border-bottom-left-radius: 50%;
+    margin-bottom: 4vh;
+    margin-top: 2vh;
+}
+
+.lat_lon {
+    width: 100%;
+    height: auto;
+    margin-top: -5.9vh;
+}
+
+@media (orientation:landscape) {
+    .load_images {
+        width: 24vw;
+        height: 22vh;
+    }
+    .lat_lon {
+        width: 100%;
+        height: auto;
+        margin-top: -5.9vh;
+        margin-bottom: 2vh;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .load_images {
+        width: 24%;
+        height: 22%;
+    }
+    .temperature {
+        margin-top: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    .upper_section {
+        width: 30%;
+        height: auto;
+        float: left;
+        padding: 1vh;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+        border: 2.5px solid rgba(255, 255, 255, 0.4);
+    }
+    .lower_section {
+        width: 30%;
+        float: right;
+        padding: 1vh;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+    .location_section {
+        width: 100%;
+        display: flex;
+        float: left;
+        justify-content: center;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+    .lat_lon {
+        width: 100%;
+        height: auto;
+        margin-top: -5.9vh;
+    }
+}
